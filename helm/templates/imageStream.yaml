@@ -1,0 +1,16 @@
+apiVersion: image.openshift.io/v1
+kind: ImageStream
+metadata:
+  name: cuda-notebook-custom
+  namespace: default
+spec:
+  lookupPolicy:
+    local: false
+  tags:
+  - name: latest
+    from:
+      kind: ImageStreamTag  
+      namespace: redhat-ods-applications
+      name: minimal-gpu:latest
+    referencePolicy:
+      type: Source

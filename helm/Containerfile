@@ -1,0 +1,2 @@
+FROM minimal-gpu:latest
+RUN echo 'hello'
