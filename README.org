@@ -111,7 +111,7 @@ spec:
   goTemplateOptions: ["missingkey=error"]
   generators:
     - git:
-        repoURL: https://github.com/odh-labs/llm-on-ocp.git
+        repoURL: https://github.com/tnscorcoran/rhoai-custom-image-temp.git
         revision: main
         directories:
           - path: gitops*
